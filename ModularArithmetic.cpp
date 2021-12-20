@@ -10,14 +10,4 @@ int mod_mul(int a, int b, int m = M) {a = a % m; b = b % m; return (((a * b) % m
 // Modular Addition
 int mod_add(int a, int b, int m = M) {a = a % m; b = b % m; return (((a + b) % m) + m) % m;}
 
-// nCr using preComputaton if factorial and inverse factorial
-// Initialize N as Needed
-int N = 1000005;
-vi fact(N + 1, 1);
-vi ifact(N + 1, 1);
-int nCr(int n, int r) {
-	int ans = fact[n];
-	ans = mod_mul(ans, ifact[r]);
-	ans = mod_mul(ans, ifact[n - r]);
-	return ans;
-}
+
