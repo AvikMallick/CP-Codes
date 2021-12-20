@@ -1,3 +1,5 @@
+<snippet>
+	<content><![CDATA[
 #include <bits/stdc++.h>
 // #include<ext/pb_ds/assoc_container.hpp>
 // #include<ext/pb_ds/tree_policy.hpp>
@@ -28,7 +30,7 @@ using namespace std;
 //template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>; 
 // declaration : oset<data_type> s;
 
-#ifndef ONLINE_JUDGE
+#ifdef avik_local
 #define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
 #else
 #define debug(x);
@@ -65,12 +67,12 @@ int inv(int i, int m = M) {if (i == 1) return 1; return (m - ((m / i) * inv(m % 
 int mpow(int a, int b, int m = M) { int x = 1; while (b > 0) { if (b & 1) { x = (x * a) % m;} a = (a * a) % m; b >>= 1;} return x;}
 /*-----------------------------------------------------------------------------------------------------------------*/
 
-void solve() { 
+void solve(${1}) { 
 	
 }
 
 signed main() {
-#ifndef ONLINE_JUDGE
+#ifdef avik_local
 	freopen("Error.txt", "w", stderr);
 #endif
 	ios_base::sync_with_stdio(false);
@@ -83,3 +85,9 @@ signed main() {
 
 	return 0;
 }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>basecode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
