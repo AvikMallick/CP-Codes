@@ -1,5 +1,3 @@
-<snippet>
-	<content><![CDATA[
 #include <bits/stdc++.h>
 // #include<ext/pb_ds/assoc_container.hpp>
 // #include<ext/pb_ds/tree_policy.hpp>
@@ -67,7 +65,7 @@ int inv(int i, int m = M) {if (i == 1) return 1; return (m - ((m / i) * inv(m % 
 int mpow(int a, int b, int m = M) { int x = 1; while (b > 0) { if (b & 1) { x = (x * a) % m;} a = (a * a) % m; b >>= 1;} return x;}
 /*-----------------------------------------------------------------------------------------------------------------*/
 
-void solve(${1}) { 
+void solve() { 
 	
 }
 
@@ -85,9 +83,3 @@ signed main() {
 
 	return 0;
 }
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>basecode</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>
