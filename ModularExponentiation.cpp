@@ -1,3 +1,4 @@
+// Modular Exponentiation
 int mpow(int a, int b, int m) { // pow(a, b) % m
 	int x = 1;
 	while (b > 0) {
@@ -9,3 +10,13 @@ int mpow(int a, int b, int m) { // pow(a, b) % m
 	}
 	return x;
 }
+
+// Modular Inverse
+int inv(int i) {if (i == 1) return 1; return (M - ((M / i) * inv(M % i)) % M) % M;}
+
+// Modular Multiplication
+int mod_mul(int a, int b) {a = a % M; b = b % M; return (((a * b) % M) + M) % M;}
+
+// Modular Addition
+ll mod_add(int a, int b) {a = a % M; b = b % M; return (((a + b) % M) + M) % M;}
+
