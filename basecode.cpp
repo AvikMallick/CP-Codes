@@ -18,7 +18,7 @@ using namespace std;
 #define vbool             vector<bool>
 #define vchar             vector<char>
 #define vstring           vector<string>
-#define vpii              vector<pair>
+#define vpii              vector<pair<int,int>>
 #define all(x)            (x).begin(), (x).end()
 #define mem1(a)           memset(a,-1,sizeof(a))
 #define mem0(a)           memset(a,0,sizeof(a))
