@@ -53,7 +53,7 @@ template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i
 
 const long long INF = 1e18;
 const int32_t M = 1e9+7;
-const int32_t MM = 998244353;
+// const int32_t M = 998244353;
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 int gcd(int a, int b) {if (b > a) {return gcd(b, a);} if (b == 0) {return a;} return gcd(b, a % b);}
