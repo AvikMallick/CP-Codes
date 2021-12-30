@@ -10,7 +10,7 @@ int nCr(int n, int r) {
 	return ans;
 }
 /* initialization of fact & ifact */
-    for(int i = 2; i < N; i++) {
+    for(int i = 2; i <= N; i++) {
         fact[i] = mod_mul(i, fact[i - 1]);
     }
     ifact[N] = inv(fact[N]);
