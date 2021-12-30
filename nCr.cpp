@@ -4,6 +4,7 @@ int N = 1000005;
 vi fact(N + 1, 1);
 vi ifact(N + 1, 1);
 int nCr(int n, int r) {
+	if(r > n) return 0;
 	int ans = fact[n];
 	ans = mod_mul(ans, ifact[r]);
 	ans = mod_mul(ans, ifact[n - r]);
