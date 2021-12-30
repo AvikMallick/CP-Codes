@@ -11,7 +11,7 @@ int nCr(int n, int r) {
 }
 /* initialization of fact & ifact */
     for(int i = 2; i < N; i++) {
-        fact[i] = i * fact[i - 1];
+        fact[i] = mod_mul(i, fact[i - 1]);
     }
     ifact[N] = inv(fact[N]);
     for (int i = N - 1; i > 0; i--) {
