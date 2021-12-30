@@ -9,10 +9,12 @@ int nCr(int n, int r) {
 	ans = mod_mul(ans, ifact[n - r]);
 	return ans;
 }
-/* initialization of ifact */
-ifact[N] = inv(fact[N]);
-for (int i = N - 1; i > 0; i--)
-{
-  ifact[i] = mod_mul(i + 1, ifact[i + 1]);
-}
+/* initialization of fact & ifact */
+    for(int i = 2; i < N; i++) {
+        fact[i] = i * fact[i - 1];
+    }
+    ifact[N] = inv(fact[N]);
+    for (int i = N - 1; i > 0; i--) {
+        ifact[i] = mod_mul(i + 1, ifact[i + 1]);
+    }
 /********************************/
