@@ -13,6 +13,7 @@ using namespace std;
 #define pii               pair<int,int>
 #define rep(i,a,b)        for(int i=a;i<b;i++)
 #define repr(i,a,b)       for(int i=a;i>=b;i--)
+#define repa(x, a)        for(auto &x : a)
 #define vi                vector<int>
 #define vvi               vector<vector<int>>
 #define vbool             vector<bool>
