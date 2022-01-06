@@ -24,7 +24,7 @@ using namespace chrono;
 #define all(x)            (x).begin(), (x).end()
 #define mem1(a)           memset(a,-1,sizeof(a))
 #define mem0(a)           memset(a,0,sizeof(a))
-#define set_bits             __builtin_popcountll
+#define set_bits          __builtin_popcountll
 
 //template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>; 
 // declaration : oset<data_type> s;
