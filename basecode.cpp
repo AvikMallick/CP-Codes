@@ -12,6 +12,8 @@ using namespace chrono;
 #define fr                first
 #define sc                second
 #define pii               pair<int,int>
+#define umap              unordered_map
+#define uset              unordered_set
 #define rep(i,a,b)        for(int i=a;i<b;i++)
 #define repr(i,a,b)       for(int i=a;i>=b;i--)
 #define repa(x, a)        for(auto &x : a)
@@ -28,6 +30,9 @@ using namespace chrono;
 
 //template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>; 
 // declaration : oset<data_type> s;
+
+template<typename T,typename T1>T amax(T &a,T1 b){if(b>a)a=b;return a;}
+template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
 
 #ifdef avik_local
 #define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
@@ -53,6 +58,7 @@ template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_pr
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 const long long INF = 1e18;
+const int MX = 100001;
 const int32_t M = 1e9+7;
 // const int32_t M = 998244353;
 
@@ -70,7 +76,7 @@ void solve() {
 	
 }
 
-signed main() {
+int32_t main() {
 #ifdef avik_local
 	freopen("Error.txt", "w", stderr);
 #endif
@@ -80,12 +86,13 @@ signed main() {
 	int t = 1;
 	cin >> t;
 	while (t--) {
+		debug(t)
 		solve();
 	}
 	auto stop1 = high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(stop1 - start1);
 #ifdef avik_local
-    cerr << "Time: " << duration . count() / 1000 << "\n";
+    cerr << "Time: " << duration.count() / 1000 << "\n";
 #endif
 	return 0;
 }
