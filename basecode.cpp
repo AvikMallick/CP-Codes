@@ -8,6 +8,8 @@ using namespace chrono;
 
 #define int               long long
 #define pb                push_back
+#define ppb               pop_back
+#define ins               insert
 #define sz(x)             (int)((x).size())
 #define fr                first
 #define sc                second
@@ -24,6 +26,8 @@ using namespace chrono;
 #define vstring           vector<string>
 #define vpii              vector<pair<int,int>>
 #define all(x)            (x).begin(), (x).end()
+#define lb                lower_bound
+#define ub                upper_bound
 #define mem1(a)           memset(a,-1,sizeof(a))
 #define mem0(a)           memset(a,0,sizeof(a))
 #define set_bits          __builtin_popcountll
