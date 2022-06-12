@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
-// #include<ext/pb_ds/assoc_container.hpp>
-// #include<ext/pb_ds/tree_policy.hpp>
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
 
 using namespace std;
 using namespace chrono;
-// using namespace __gnu_pbds;
+using namespace __gnu_pbds;
 
 #define int               long long
 #define pb                push_back
@@ -32,21 +32,21 @@ using namespace chrono;
 #define mem0(a)           memset(a,0,sizeof(a))
 #define set_bits          __builtin_popcountll
 
-//template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>; 
+template<class T> using oset =tree<T, null_type, less<T>, rb_tree_tag,tree_order_statistics_node_update>; 
 // declaration : oset<data_type> s;
 
-template<typename T,typename T1>T amax(T &a,T1 b){if(b>a)a=b;return a;}
-template<typename T,typename T1>T amin(T &a,T1 b){if(b<a)a=b;return a;}
+template<typename T, typename T1> T amax(T &a, T1 b){if(b > a)a = b; return a;}
+template<typename T, typename T1> T amin(T &a, T1 b){if(b < a)a = b; return a;}
 
 #ifdef avik_local
-#define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
+#define debug(x) cerr << #x<< " "; _print(x); cerr << endl;
 #else
 #define debug(x);
 #endif
 void _print(int t) {cerr << t;}
 void _print(string t) {cerr << t;}
 void _print(char t) {cerr << t;}
-void _print(long double t) {cerr << t;}
+// void _print(long double t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(unsigned long long t) {cerr << t;}
 
@@ -85,7 +85,7 @@ int32_t main() {
 	freopen("Error.txt", "w", stderr);
 #endif
 	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);cout.tie(NULL);
+	cin.tie(NULL); cout.tie(NULL);
 	auto start1 = high_resolution_clock::now();
 	int t = 1;
 	cin >> t;
