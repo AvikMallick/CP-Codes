@@ -26,7 +26,7 @@ struct dsu {
 		if (rank[x] < rank[y])
 			swap(x, y);
 		else if (rank[x] == rank[y])
-			rank[y]++;
+			rank[x]++;
 		parent[y] = x;
 		count[x] += count[y];
 		return;
